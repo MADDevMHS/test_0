@@ -9,13 +9,34 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    var siddIsStupid:Bool = Bool()
 
+    @IBOutlet weak var label: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         print("stuck feve")
+        
+        siddIsStupid = false
     }
 
+    @IBAction func Change(sender: AnyObject) {
+        
+        if(siddIsStupid == false){
+        
+            label.text = "Sidd Is Stupid"
+            siddIsStupid = true
+            
+        }else if(siddIsStupid == true){
+            
+            label.text = "Steve Is Awesome"
+            siddIsStupid = false
+            
+        }
+        
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
