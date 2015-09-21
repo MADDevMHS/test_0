@@ -31,7 +31,7 @@ class ViewController: UIViewController {
             
         }else if(siddIsStupid == true){
             
-            label.text = "Steve Is Awesome"
+            label.text = "Steve Is a fucking worthless brainded scumfuck bastard pile of trash mental dickface that should be gunned down on the street like the degenerate he is"
             siddIsStupid = false
             
         }
